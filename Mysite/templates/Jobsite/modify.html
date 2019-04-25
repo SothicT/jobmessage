@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+		{% load staticfiles %}
+		{% csrf_token %}
+		<meta charset="utf-8">
+		<title>修改密码</title>
+		<link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+		<link rel="stylesheet" href="{% static "css/common.css" %}"/>
+		<link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+		<script type="text/javascript">
+			function check() {
+				if(modify_form.username.value == ""){
+				alert("请输入用户名!");
+				modify_form.username.focus();
+				return;
+				}
+				if(modify_form.oldpassword.value == ""){
+				alert("请输入旧密码!");
+				modify_form.password.focus();
+				return;
+				}
+				if(modify_form.password.value == ""){
+				alert("请输入新密码!");
+				modify_form.password.focus();
+				return;
+				}
+				if(modify_form.repassword.value == ""){
+				alert("	请再次输入密码！");
+				modify_form.repassword.focus();
+				return;
+				}
+				if(modify_form.password.value != modify_form.repassword.value){
+				alert("两次输入的密码不一样，请重新输入！");
+				modify_form.repassword.focus();
+				return;
+				}
+				modify_form.submit();
+			}
+		</script>
+	</head>
+	<body >
+		<div class="wrap login_wrap">
+			<div class="content">
+
+				<div class="logo"></div>
+
+				<div class="login_box">
+
+					<div class="login_form">
+						<div class="login_title">
+							修改密码
+						</div>
+						<form action="/modify/" method="post" name="modify_form">
+
+							<div class="form_text_ipt">
+								<input id="username" name="username" type="text" placeholder="{{username}}"  value="{{username}}" readonly="readonly">
+								<script>
+									window.onload = function(){
+									document.getElementById("username").value = {{username}}
+									}
+								</script>
+							</div>
+							<div class="ececk_warning"><span>账号不能为空</span></div>
+							<div class="form_text_ipt">
+								<input name="oldpassword" type="password" placeholder="旧密码" >
+							</div>
+							<div class="ececk_warning"><span>旧密码不能为空</span></div>
+							<div class="form_text_ipt">
+								<input name="password" type="password" placeholder="新密码">
+							</div>
+							<div class="ececk_warning"><span>新密码不能为空</span></div>
+							<div class="form_text_ipt">
+								<input name="repassword" type="password" placeholder="重复新密码">
+							</div>
+							<div class="ececk_warning"><span>重复密码必须和新密码相同</span></div>
+							<div class="form_btn">
+								<button type="button" onclick="check()">修改</button>
+								<!--使页面跳转不报403错误，防止CSRF验证失败-->
+								{% csrf_token %}
+							</div>
+							<div class="form_reg_btn">
+								<span>已有帐号？</span><a href="http://localhost:8000/">马上登录</a>
+							</div>
+						</form>
+						<div class="other_login">
+							<div class="left other_left">
+								<span>其它登录方式</span>
+							</div>
+							<div class="right other_right">
+								<a href=""><i class="fa fa-qq fa-2x"></i></a>
+								<a href=""><i class="fa fa-weixin fa-2x"></i></a>
+								<a href=""><i class="fa fa-weibo fa-2x"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="{% static "js/jquery.min.js" %} " ></script>
+		<script type="text/javascript" src="{% static "js/common.js" %}" ></script>
+		<div style="text-align:center;">
+
+</div>
+	</body>
+</html>

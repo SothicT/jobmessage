@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>招聘信息分析系统51</title>
+    {% load staticfiles %}
+    {% load pagination_tags %}      <!--# 标记要分页的页面-->
+    {% autopaginate job_message_list  %} <!-- # 每页显示60条数据，不加数字默认值为20-->
+    <link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/common.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/layout.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/select.css" %}"/>
+    <SCRIPT language=JavaScript>
+        function jumpPage(targ,selObj,restore)
+        {
+          eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+            if (restore)
+                selObj.selectedIndex=0;
+         }
+    </SCRIPT>
+</head>
+<body>
+	<div name="headline" class="navBar">
+		<dl>
+			<dt>
+				<a href="#">招聘信息可视化分析系统</a>
+				<a href="http://127.0.0.1:8000\Visual?username={{username}}">可视化分析</a>
+                <a href="http://127.0.0.1:8000\mainbyzl?username={{username}}">数据来源:智联招聘</a>
+                <a href="http://127.0.0.1:8000\mainby51?username={{username}}">数据来源:前程无忧</a>
+                <a href="http://127.0.0.1:8000\spider?username={{username}}">爬取相关工作</a>
+			</dt>
+            <dd>
+                 <a href="http://127.0.0.1:8000\modify?username={{username}}"><strong>欢迎：{{username}}</strong></a>
+                <a href="http://127.0.0.1:8000">注销</a>
+                <span>
+                    <script type="text/javascript" language="javascript">
+				        var myDate = new Date();
+				        var timestr = myDate.getFullYear()+'年'+(myDate.getMonth()+1)+'月'+myDate.getDate()+'日';
+				        document.write("<font style='font-size:13px;font-family:Microsoft Yahei,宋体;color:#fff; padding-left:20px;'>"+timestr+"</font>");
+			        </script>
+                </span>
+            </dd>
+		</dl>
+	</div>
+    <!--<div class="search" align="center" >-->
+        <!--<form id="search_form_rent" name="search_form" action="/Searchin51/" method="post">-->
+            <!--{% csrf_token %}-->
+            <!--<input name="searchtext" type = "text" value="" placeholder = "请输入关键字"   style='border:none;width: 531px; height：40px;font-size: 24px; font-family: "Times New Roman", Serif'>-->
+            <!--<select name="select" style='width: 209px; height: 40px; font-size: 24px; font-family: "Times New Roman", Serif'>-->
+                <!--<option value = "all">搜索全部信息</option>-->
+                <!--<option value = "ZWname">职位名称</option>-->
+                <!--<option value = "ZWsalary">职位工资</option>-->
+                <!--<option value = "ZWadd">工作地点</option>-->
+                <!--<option value = "ZDedu">最低学历</option>-->
+                <!--<option value="ZWexp">工作经验</option>-->
+                <!--<option value="date">发布日期</option>-->
+            <!--</select>-->
+            <!--<input name="submit" type="submit"  value=" " class="search_icon">-->
+            <!--<a href="http://127.0.0.1:8000/search?username={{user.username}}&source=51">高级搜索</a>-->
+            <!--<input name="username" value="{{username}}" hidden="hidden">-->
+        <!--</form>-->
+    <!--</div>-->
+    <div class="wrap login_wrap">
+			<div class="content">
+				<div class="search_box">
+					<div class="login_form">
+						<div class="login_title">
+                            <h2>搜索结果</h2>
+						</div>
+                            <div>
+                            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#969696">    <!--width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#969696"-->
+                                <tr>
+                                    <th bgcolor="#C0C0C0">公司名称</th>
+                                    <th bgcolor="#C0C0C0">职位名称</th>
+                                    <th bgcolor="#C0C0C0">职位薪水</th>
+                                    <th bgcolor="#C0C0C0">工作经验</th>
+                                    <th bgcolor="#C0C0C0">工作地点</th>
+                                    <th bgcolor="#C0C0C0">最低学历</th>
+                                    <th bgcolor="#C0C0C0">职位数量</th>
+                                    <th bgcolor="#C0C0C0">发布日期</th>
+                                </tr>
+                                {% for message in job_message_list %}
+                                <tr>
+                                    {% if source == 'zl'%}
+                                    <td bgcolor="#FFFFFF">
+                                        <a href="http://127.0.0.1:8000\messagebyzl?id={{message.pk}}&username={{username}}">{{message.GSname}}</a>
+                                    </td>
+                                    {% elif source == '51'%}
+                                    <td bgcolor="#FFFFFF">
+                                        <a href="http://127.0.0.1:8000\messagebyz51?id={{message.pk}}&username={{username}}">{{message.GSname}}</a>
+                                    </td>
+                                    {% endif %}
+                                    <td bgcolor="#FFFFFF">{{message.ZWname}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWsalary}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWexp}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWadd}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZDedu}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWnum}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.date}}</td>
+                                </tr>
+                                {% endfor %}
+                                {% paginate %}
+                                {% csrf_token %}
+                            </table>
+                        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="{% static "js/jquery.min.js" %} " ></script>
+		<script type="text/javascript" src="{% static "js/common.js" %}" ></script>
+		<div style="text-align:center;">
+</body>
+</html>

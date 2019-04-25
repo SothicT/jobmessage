@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工作详情</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/common.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/layout.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/forms.css" %}"/>
+</head>
+<body>
+<div name="headline" class="navBar">
+		<dl>
+			<dt>
+				<a href="#">招聘信息可视化分析系统</a>
+				<a href="http://127.0.0.1:8000\Visual?username={{user.username}}">可视化分析</a>
+                <a href="http://127.0.0.1:8000\mainbyzl?username={{user.username}}">数据来源:智联招聘</a>
+                <a href="http://127.0.0.1:8000\mainby51?username={{user.username}}">数据来源:前程无忧</a>
+                <a href="http://127.0.0.1:8000\spider?username={{user.username}}">爬取相关工作</a>
+			</dt>
+            <dd>
+                 <a href="http://127.0.0.1:8000\modify?username={{username}}"><strong>欢迎：{{username}}</strong></a>
+                <a href="http://127.0.0.1:8000">注销</a>
+                <span>
+                    <script type="text/javascript" language="javascript">
+				        var myDate = new Date();
+				        var timestr = myDate.getFullYear()+'年'+(myDate.getMonth()+1)+'月'+myDate.getDate()+'日';
+				        document.write("<font style='font-size:13px;font-family:Microsoft Yahei,宋体;color:#fff; padding-left:20px;'>"+timestr+"</font>");
+			        </script>
+                </span>
+            </dd>
+		</dl>
+	</div>
+<div class="wrap login_wrap">
+    <div class="content">
+        <div class="message_box">
+					<div class="login_form">
+						<div class="message_title">
+                            职位详情
+                        </div>
+                        <div name="message_display">
+                            <fieldset class="module aligned ">
+                                <div class="form-row field-GSname">
+                                    <div>
+                                        <label class="required" for="id_GSname">公司名称:</label>
+                                        <input type="text" name="GSname" value="{{message.GSname}} " readonly="readonly" class="vTextField" maxlength="255" required id="id_GSname" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-GSlink">
+                                    <div>
+                                        <label class="required" for="id_GSlink">公司链接: </label>
+                                        <input type="text" name="GSlink" value="{{message.GSlink}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_GSlink" />
+                                        <label class="required" for="id_GSlink"><a href="{{message.GSlink}}">点击进入<a/></label>
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWname">
+                                    <div>
+                                        <label class="required" for="id_ZWname">职位名称:</label>
+                                        <input type="text" name="ZWname" value="{{message.ZWname}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_ZWname" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWsalary">
+                                    <div>
+                                        <label class="required" for="id_ZWsalary">工作月薪:</label>
+                                        <input type="text" name="ZWsalary" value="{{message.ZWsalary}}"  readonly= "readonly" class="vTextField" maxlength="255" required id="id_ZWsalary" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWtype">
+                                    <div>
+                                        <label class="required" for="id_ZWtype">职位类型:</label>
+                                        <input type="text" name="ZWtype" value="{{message.ZWtype}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_ZWtype" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWexp">
+                                    <div>
+                                        <label class="required" for="id_ZWexp">工作经验:</label>
+                                        <input type="text" name="ZWexp" value="{{message.ZWexp}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_ZWexp" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWadd">
+                                    <div>
+                                        <label class="required" for="id_ZWadd">工作地点:</label>
+                                        <input type="text" name="ZWadd" value="{{message.ZWadd}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_ZWadd" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWnature">
+                                    <div>
+                                        <label class="required" for="id_ZWnature">公司性质:</label>
+                                        <input type="text" name="ZWnature" value="{{message.ZWnature}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_ZWnature" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZDedu">
+                                    <div>
+                                        <label class="required" for="id_ZDedu">最低学历:</label>
+                                        <input type="text" name="ZDedu" value="{{message.ZDedu}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_ZDedu" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWnum">
+                                    <div>
+                                        <label class="required" for="id_ZWnum">职位数量:</label>
+                                        <input type="text" name="ZWnum" value="{{message.ZWnum}} "  readonly="readonly" class="vTextField" maxlength="255" required id="id_ZWnum" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-date">
+                                    <div>
+                                        <label class="required" for="id_date">发布日期:</label>
+                                        <input type="text" name="date" value="{{message.date}}"  readonly="readonly" class="vTextField" maxlength="255" required id="id_date" />
+                                    </div>
+                                </div>
+                                <div class="form-row field-ZWinfo">
+                                    <div>
+                                        <label class="required" for="id_ZWinfo">公司详情:</label>
+                                        <textarea name="ZWinfo" cols="40" rows="10"  readonly="readonly" class="vLargeTextField" required id="id_ZWinfo">
+                                        {{message.ZWinfo}}
+                                        </textarea>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+2018-03-11 15:54:42,313 DEBUG    hu         I'm debug 测试中文
+
+2018-03-11 15:54:42,314 INFO     hu         I'm info    
+
+2018-03-11 15:54:42,314 WARNING  hu         I'm warn    
+
+2018-03-11 15:54:42,315 ERROR    hu         I'm error 测试中文
+
+2018-03-11 15:54:42,315 CRITICAL hu         I'm critical
+
+2018-03-13 17:01:29,339 DEBUG    hu         I'm debug 测试中文
+
+2018-03-13 17:01:29,340 INFO     hu         I'm info    
+
+2018-03-13 17:01:29,340 WARNING  hu         I'm warn    
+
+2018-03-13 17:01:29,340 ERROR    hu         I'm error 测试中文
+
+2018-03-13 17:01:29,340 CRITICAL hu         I'm critical
+

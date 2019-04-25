@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可视化分析</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/common.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/layout.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/gallery.css" %}"/>
+</head>
+<body onload="initial">
+<div name="headline" class="navBar">
+		<dl>
+			<dt>
+				<a href="#">招聘信息可视化分析系统</a>
+				<a href="http://127.0.0.1:8000\Visual?username={{username}}">可视化分析</a>
+                <a href="http://127.0.0.1:8000\mainbyzl?username={{username}}">数据来源:智联招聘</a>
+                <a href="http://127.0.0.1:8000\mainby51?username={{username}}">数据来源:前程无忧</a>
+                <a href="http://127.0.0.1:8000\spider?username={{username}}">爬取相关工作</a>
+			</dt>
+            <dd>
+                <a href="http://127.0.0.1:8000\modify?username={{username}}"><strong>欢迎：{{username}}</strong></a>
+                <a href="http://127.0.0.1:8000">注销</a>
+                <span>
+                    <script type="text/javascript" language="javascript">
+				        var myDate = new Date();
+				        var timestr = myDate.getFullYear()+'年'+(myDate.getMonth()+1)+'月'+myDate.getDate()+'日';
+				        document.write("<font style='font-size:13px;font-family:Microsoft Yahei,宋体;color:#fff; padding-left:20px;'>"+timestr+"</font>");
+			        </script>
+                </span>
+            </dd>
+		</dl>
+</div>
+<div class="wrap login_wrap">
+    <div class="content">
+        <div class="visual_box">
+            <div class="login_form">
+                <div class="message_title">
+                    分析结果
+                </div>
+                <!--2018-4-13 17:45   可视化图片展示-->
+                <div id="gallery">
+                    <div id="slides">
+                               <div id="slide1">
+                                   <ul>
+                                    <li><img class="blank" src="{% static "img\upx(1).png" %}" alt="" /></li>
+                                    <li><a href="#pic1"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBycity_salary.png" %}" alt="city_salary" /></a></li>
+                                    <li><a href="#pic2"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByedu_num.png" %}" alt="edu_num" /></a></li>
+                                    <li><a href="#pic3"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByedu_salary.png" %}"alt="edu_salary" /></a></li>
+                                    <li><a href="#pic4"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByExp_num.png" %}" alt="Exp_num" /></a></li>
+                                    <li><a href="#pic5"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByexp_salary.png" %}"alt="exp_salary" /></a></li>
+                                    <li><a href="#slide2" class="next"></a></li>
+                                  </ul>
+                               </div>
+                               <div id="slide2">
+                                  <ul>
+                                    <li><a href="#slide1" class="previous"></a></li>
+                                    <li><a href="#pic2"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByedu_num.png" %}" alt="edu_num" /></a></li>
+                                    <li><a href="#pic3"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByedu_salary.png" %}" alt="edu_salary" /></a></li>
+                                    <li><a href="#pic4"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByExp_num.png" %}" alt="Exp_num" /></a></li>
+                                    <li><a href="#pic5"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByexp_salary.png" %}" alt="exp_salary" /></a></li>
+                                      <li><a href="#pic6"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBywork_num.png" %}"alt="work_num" /></a></li>
+                                    <li><a href="#slide3" class="next"></a></li>
+                                  </ul>
+                               </div>
+                               <div id="slide3">
+                                  <ul>
+                                    <li><a href="#slide2" class="previous"></a></li>
+                                    <li><a href="#pic3"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByedu_salary.png" %}" alt="edu_salary" /></a></li>
+                                    <li><a href="#pic4"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByExp_num.png" %}" alt="Exp_num" /></a></li>
+                                    <li><a href="#pic5"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByexp_salary.png" %}" alt="exp_salary" /></a></li>
+                                    <li><a href="#pic6"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBywork_num.png" %}"alt="work_num" /></a></li>
+                                    <li><a href="#pic7"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_num.png" %}"alt="city_num" /></a></li>
+                                    <li><a href="#slide4" class="next"></a></li>
+                                  </ul>
+                               </div>
+                               <div id="slide4">
+                                  <ul>
+                                    <li><a href="#slide3" class="previous"></a></li>
+                                    <li><a href="#pic4"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByExp_num.png" %}" alt="Exp_num" /></a></li>
+                                    <li><a href="#pic5"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByexp_salary.png" %}" alt="exp_salary" /></a></li>
+                                    <li><a href="#pic6"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBywork_num.png" %}"alt="work_num" /></a></li>
+                                    <li><a href="#pic7"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_num.png" %}"alt="city_num" /></a></li>
+                                    <li><a href="#pic8"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_num.png" %}"alt="exp_num" /></a></li>
+                                     <li><a href="#slide5" class="next"></a></li>
+                                  </ul>
+                               </div>
+                               <div id="slide5">
+                                  <ul>
+                                     <li><a href="#slide4" class="previous"><b>Previous</b></a></li>
+                                     <li><a href="#pic5"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByexp_salary.png" %}" alt="exp_salary" /></a></li>
+                                     <li><a href="#pic6"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBywork_num.png" %}"alt="work_num" /></a></li>
+                                     <li><a href="#pic7"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_num.png" %}"alt="city_num" /></a></li>
+                                     <li><a href="#pic8"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_num.png" %}"alt="exp_num" /></a></li>
+                                     <li><a href="#pic9"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByedu_num.png" %}"alt="edu_num" /></a></li>
+                                     <li><a href="#slide6" class="next"></a></li>
+                                  </ul>
+                               </div>
+                               <div id="slide6">
+                                  <ul>
+                                      <li><a href="#slide5" class="previous"><b>Previous</b></a></li>
+                                      <li><a href="#pic6"><img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBywork_num.png" %}"alt="work_num" /></a></li>
+                                      <li><a href="#pic7"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_num.png" %}"alt="city_num" /></a></li>
+                                      <li><a href="#pic8"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_num.png" %}"alt="exp_num" /></a></li>
+                                      <li><a href="#pic9"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByedu_num.png" %}"alt="edu_num" /></a></li>
+                                      <li><a href="#pic10"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_salary.png" %}"alt="exp_salary" /></a></li>
+                                      <li><a href="#slide7" class="next"></a></li>
+                                  </ul>
+                               </div>
+                               <div id="slide7">
+                                  <ul>
+                                      <li><a href="#slide5" class="previous"><b>Previous</b></a></li>
+                                      <li><a href="#pic7"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_num.png" %}"alt="city_num" /></a></li>
+                                      <li><a href="#pic8"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_num.png" %}"alt="exp_num" /></a></li>
+                                      <li><a href="#pic9"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByedu_num.png" %}"alt="edu_num" /></a></li>
+                                      <li><a href="#pic10"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_salary.png" %}"alt="exp_salary" /></a></li>
+                                      <li><a href="#pic11"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_salary.png" %}"alt="exp_salary" /></a></li>
+                                      <li><a href="#slide8" class="next"></a></li>
+                                  </ul>
+                               </div>
+                               <div id="slide8">
+                                  <ul>
+                                      <li><a href="#slide5" class="previous"><b>Previous</b></a></li>
+                                      <li><a href="#pic8"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_num.png" %}"alt="exp_num" /></a></li>
+                                      <li><a href="#pic9"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByedu_num.png" %}"alt="edu_num" /></a></li>
+                                      <li><a href="#pic10"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_salary.png" %}"alt="exp_salary" /></a></li>
+                                      <li><a href="#pic11"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_salary.png" %}"alt="exp_salary" /></a></li>
+                                      <li><a href="#pic12"><img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByedu_salary.png" %}"alt="exp_salary" /></a></li>
+                                      <li><img class="blank" src="{% static "img\downx(1).png" %}" alt="" /></li>
+                                  </ul>
+                               </div>
+                           </div>
+                    <div id="fullsize">
+
+                        <div id="pic1"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/zljob_python/WorkAnalysisBycity_salary.png" target="_blank">
+                            <img name="myImage" src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBycity_salary.png" %}" alt="city_salary" />
+                            <h3>城市——平均月薪分布图</h3>
+                            <p>分析结果：</p>
+                        </a>
+                        </div>
+                        <div id="pic2">
+                            <a href="http://127.0.0.1:8000/static/img/VisualPicture/zljob_python/WorkAnalysisByedu_num.png" target="_blank">
+                                <img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByedu_num.png" %}" alt="edu_num" />
+                          <h3>最低学历——职位数量分布图</h3>
+                          <p>分析结果：</p>
+                            </a>
+                        </div>
+                        <div id="pic3"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/zljob_python/WorkAnalysisByedu_salary.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByedu_salary.png" %}" alt="edu_salary" />
+                          <h3>最低学历—工作经验—平均月薪分布图</h3>
+                          <p>分析结果：.</p>
+                        </a>
+                        </div>
+                        <div id="pic4"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/zljob_python/WorkAnalysisByExp_num.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByExp_num.png" %}" alt="Exp_num" />
+                          <h3>工作经验——职位数量分布图</h3>
+                          <p>分析结果：</p>
+                        </a>
+                        </div>
+                        <div id="pic5"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/zljob_python/WorkAnalysisByexp_salary.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisByexp_salary.png" %}" alt="exp_salary" />
+                          <h3>工作经验——平均月薪分布图</h3>
+                          <p>分析结果： </p>
+                        </a>
+                        </div>
+                        <div id="pic6"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/zljob_python/WorkAnalysisBywork_num.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\zljob_python\WorkAnalysisBywork_num.png" %}" alt="work_num" />
+                          <h3>城市——职位数量分布图</h3>
+                            <p>分析结果：</p>
+                            <p>这是通过爬取智联招聘的招聘信息通过分析出来的职位数量与城市的关系图</p>
+                        </a>
+                        </div>
+                        <div id="pic7"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/51job_python/WorkAnalysisBycity_num.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_num.png" %}"alt="city_num" />
+                            <h3>城市——职位数量分布图</h3>
+                            <p>分析结果：</p>
+                            <p>这是通过爬取前程无忧的招聘信息通过分析出来的职位数量与城市的关系图</p>
+                        </a>
+                        </div>
+                        <div id="pic8"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/51job_python/WorkAnalysisByexp_num.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_num.png" %}"alt="exp_num" />
+                            <h3>工作经验——工作数量分布图</h3>
+                            <p>分析结果：</p>
+                        </a>
+                        </div>
+                        <div id="pic9"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/51job_python/WorkAnalysisByedu_num.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByedu_num.png" %}"alt="edu_num" />
+                            <h3>最低学历——工作数量分布图</h3>
+                            <p>分析结果：</p>
+                        </div>
+                        <div id="pic10"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/51job_python/WorkAnalysisByexp_salary.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByexp_salary.png" %}"alt="exp_salary" />
+                            <h3>工作经验—平均月薪分布图</h3>
+                            <p>分析结果：</p>
+                        </a>
+                        </div>
+                         <div id="pic11"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/51job_python/WorkAnalysisBycity_salary.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\51job_python\WorkAnalysisBycity_salary.png" %}"alt="exp_salary" />
+                            <h3>工作城市—平均月薪分布图</h3>
+                            <p>分析结果：</p>
+                         </a>
+                        </div>
+                        <div id="pic12"> <a href="http://127.0.0.1:8000/static/img/VisualPicture/51job_python/WorkAnalysisByedu_salary.png" target="_blank">
+                            <img src="{% static "img\VisualPicture\51job_python\WorkAnalysisByedu_salary.png" %}"alt="exp_salary" />
+                            <h3>最低学历—工作经验—平均月薪分布图</h3>
+                            <p>分析结果：</p>
+                         </a>
+                        </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

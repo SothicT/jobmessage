@@ -1,0 +1,49 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>跳转页面</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static "css/404style.css" %}"/>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href="//fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Custom Error Page Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script>
+			var t=3;//设定跳转的时间
+			setInterval("refer()",1000); //启动1秒定时
+			function refer(){
+			if(t==0){
+			location="http://127.0.0.1:8000/Visual?username={{username}}"; //#设定跳转的链接地址
+			}
+			document.getElementById('show').innerHTML="在"+t+"秒后将跳转到主页面"; // 显示倒计时
+			t--; // 计数器递减
+			//本文转自：
+			}
+		</script>
+</head>
+<body>
+	<div class="top-bar-agile">
+
+		<div class="nav-agileinfo">
+			<ul>
+				<li><a href="http://127.0.0.1:8000">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="content-w3">
+		<h1>tips</h1>
+		<a href="http://127.0.0.1:8000/Visual?username={{username}}"><h2>{{message}}</h2>
+			<p id ='show'></p>
+	</div>
+</body>

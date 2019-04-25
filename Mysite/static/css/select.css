@@ -1,0 +1,19 @@
+#parent{
+    background: url(../img/arrow.png) right center no-repeat;
+   /* the width and the height of your image */
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    border: solid 1px #ccc;
+}
+
+#parent select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background:transparent;
+    border:none;
+    padding-left:10px;
+    width: 120px;
+    height:100%;
+}

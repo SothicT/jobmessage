@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高级搜索</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/common.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/layout.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/forms.css" %}"/>
+	<script type="text/javascript">
+			function check() {
+			if(search_form.keyword.value == ""){
+				alert("请输入关键词!");
+				search_form.keyword.focus();
+				return;
+				}
+				if(search_form.ZWname.value == ""){
+				alert("职位名称默认为全部!");
+				search_form.ZWname.value = "all";
+				}
+				if(search_form.ZWadd.value == ""){
+				alert("工作地点默认为全国！");
+				search_form.ZWadd.value = "all";
+				}
+				if(search_form.date.value == ""){
+				alert("发布时间默认为不限！");
+				search_form.date.value = "all";
+				}
+				search_form.submit();
+			}
+		</script>
+</head>
+<body>
+<div name="headline" class="navBar">
+		<dl>
+			<dt>
+				<a href="#">招聘信息可视化分析系统</a>
+				<a href="http://127.0.0.1:8000\Visual?username={{user.username}}">可视化分析</a>
+                <a href="http://127.0.0.1:8000\mainbyzl?username={{user.username}}">数据来源:智联招聘</a>
+                <a href="http://127.0.0.1:8000\mainby51?username={{user.username}}">数据来源:前程无忧</a>
+                <a href="http://127.0.0.1:8000\spider?username={{user.username}}">爬取相关工作</a>
+			</dt>
+            <dd>
+                 <a href="http://127.0.0.1:8000\modify?username={{username}}"><strong>欢迎：{{username}}</strong></a>
+                <a href="http://127.0.0.1:8000">注销</a>
+                <span>
+                    <script type="text/javascript" language="javascript">
+				        var myDate = new Date();
+				        var timestr = myDate.getFullYear()+'年'+(myDate.getMonth()+1)+'月'+myDate.getDate()+'日';
+				        document.write("<font style='font-size:13px;font-family:Microsoft Yahei,宋体;color:#fff; padding-left:20px;'>"+timestr+"</font>");
+			        </script>
+                </span>
+            </dd>
+		</dl>
+	</div>
+<div class="wrap login_wrap">
+    <div class="content">
+        <div class="search_box">
+					<div class="login_form">
+						<div class="message_title">
+                            高级搜索
+                        </div>
+                        <form action="/search/" method="post" name="search_form">
+							<div class="form_text_ipt">
+								<input name="keyword" type="text" placeholder="关键字，例如计算机、软件">
+							</div>
+							<div class="ececk_warning"><span>关键字不能为空</span></div>
+							<div class="form_text_ipt">
+								<input name="ZWname" type="text" placeholder="职位名称，例如工程师">
+							</div>
+							<div class="ececk_warning"><span>职位名称不能为空</span></div>
+							<div class="form_text_ipt">
+								<input name="ZWadd" type="text" placeholder="工作地点，例如北京，上海">
+							</div>
+							<div class="ececk_warning"><span>默认为全国范围</span></div>
+							<div class="form_text_ipt">
+								<input name="date" type="text" placeholder="发布日期，例如04-23">
+							</div>
+							<div class="ececk_warning"><span>默认为不限时间</span></div>
+							<div class="form_text_select">
+								{% if source == 'zl'%}
+								<select name="ZWsalary" style="width:300px;height:40px;border: solid 1px #CCCCCC;font-family:'微软雅黑'; font-size: 15px;">
+									<option value="000">选择月薪范围</option>
+									<option value="-4000">4000以下</option>
+									<option value="4001-6000">4001-6000</option>
+									<option value="8001-10000">8001-10000</option>
+									<option value="10001-15000">10001-15000</option>
+									<option value="15000-">15000以上</option>
+								</select>
+								{% elif source == '51'%}
+								<select name="ZWsalary" style="width:300px;height:40px;border: solid 1px #CCCCCC;font-family:'微软雅黑'; font-size: 15px;">
+									<option value="000">选择月薪范围</option>
+									<option value="6-8">6000-8000</option>
+									<option value="0.8-1">8000-10000</option>
+									<option value="1-1.5">10000-15000</option>
+									<option value="1-1.5">10001-15000</option>
+									<option value="1.5-2">15000-20000</option>
+									<option value="1.5-">15000以上</option>
+								</select>
+								{% endif %}
+							</div>
+							<div class="ececk_warning"><span>默认为不限范围</span></div>
+							<div class="form_text_select">
+								{% if source == 'zl'%}
+								<select name="ZWexp" style="width:300px;height:40px;border: solid 1px #CCCCCC;font-family:'微软雅黑'; font-size: 15px;">
+									<option value="不限">选择工作经验</option>
+									<option value="不限">不限</option>
+									<option value="1年以下">一年以下</option>
+									<option value="1-3">1-3年</option>
+									<option value="3-5">3-5年</option>
+									<option value="5-10">5-10年</option>
+									<option value="10年以上">10年以上</option>
+								</select>
+								{% elif source == '51'%}
+								<select name="ZWexp" style="width:300px;height:40px;border: solid 1px #CCCCCC;font-family:'微软雅黑'; font-size: 15px;">
+									<option value="不限">选择工作经验</option>
+									<option value="无工作经验">无工作经验</option>
+									<option value="1年">一年经验</option>
+									<option value="2">2年经验</option>
+									<option value="3-4">3-4年</option>
+									<option value="5-7">5-7年</option>
+									<option value="8-9">8-9年</option>
+									<option value="10">10年以上</option>
+								</select>
+								{% endif %}
+							</div>
+							<div class="form_text_select">
+								<select name="ZDedu" style="width:300px;height:40px;border: solid 1px #CCCCCC;font-family:'微软雅黑'; font-size: 15px;">
+									<option value="本科">选择学历要求</option>
+									<option value="初中及以下">初中及以下</option>
+									<option value="中专">高中/中专/中技</option>
+									<option value="大专">大专</option>
+									<option value="本科">本科</option>
+									<option value="硕士">硕士</option>
+									<option value="博士">博士</option>
+								</select>
+							</div>
+							<div class="form_btn">
+								<button type="button" onclick="check()">搜索</button>
+								<!--使页面跳转不报403错误，防止CSRF验证失败-->
+								{% csrf_token %}
+							</div>
+							<div class="form_btn">
+								<button type="button" onclick="reset()">重置</button>
+								<!--使页面跳转不报403错误，防止CSRF验证失败-->
+								{% csrf_token %}
+							</div>
+							<input name="source" hidden="hidden" value="{{source}}">
+							<input name="username" hidden="hidden" value="{{username}}">
+						</form>
+                    </div>
+</body>
+</html>

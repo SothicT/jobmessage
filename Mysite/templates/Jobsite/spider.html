@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>爬取数据</title>
+    {% load staticfiles %}
+    {% load pagination_tags %}              <!--# 标记要分页的页面-->
+    {% autopaginate job_message_list  %}    <!-- # 每页显示60条数据，不加数字默认值为20-->
+    <link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/common.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/layout.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/select.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/loading.css" %}"/>
+    <script type="text/javascript" src="{% static "js/jquery.min.js" %} " ></script>
+    <script type="text/javascript" src="{% static "js/loading.js" %} " ></script>
+    <SCRIPT language=JavaScript>
+        function jumpPage(targ,selObj,restore)
+        {
+          eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+            if (restore)
+                selObj.selectedIndex=0;
+         }
+    </SCRIPT>
+</head>
+<body>
+	<div name="headline" class="navBar">
+		<dl>
+			<dt>
+				<a href="#">招聘信息可视化分析系统</a>
+				<a href="http://127.0.0.1:8000\Visual?username={{username}}">可视化分析</a>
+                <a href="http://127.0.0.1:8000\mainbyzl?username={{username}}">数据来源:智联招聘</a>
+                <a href="http://127.0.0.1:8000\mainby51?username={{username}}">数据来源:前程无忧</a>
+                <a href="http://127.0.0.1:8000\spider?username={{username}}">爬取相关工作</a>
+			</dt>
+            <dd>
+                 <a href="http://127.0.0.1:8000\modify?username={{username}}"><strong>欢迎：{{username}}</strong></a>
+                <a href="http://127.0.0.1:8000">注销</a>
+                <span>
+                    <script type="text/javascript" language="javascript">
+				        var myDate = new Date();
+				        var timestr = myDate.getFullYear()+'年'+(myDate.getMonth()+1)+'月'+myDate.getDate()+'日';
+				        document.write("<font style='font-size:13px;font-family:Microsoft Yahei,宋体;color:#fff; padding-left:20px;'>"+timestr+"</font>");
+			        </script>
+                </span>
+            </dd>
+		</dl>
+	</div>
+    <div class="spider" align="center" >
+        <form id="search_form_rent" name="spider_form" action="/spider/" method="post">
+           {% csrf_token %}
+            <input name="spidertext" type = "text" value="" placeholder = "请输入关键字,默认爬取最近60条数据"   style='border:none;width:435px; height:40px; font-size: 18px; font-family: "Times New Roman", Serif'>
+            <select name="spider_num" style='border:none;width: 115px; height: 40px; font-size: 15px; font-family: "Times New Roman", Serif'>
+                <option value="1">选择爬取数量</option>
+                <option value="2">最近120条</option>
+                <option value="3">最近180条</option>
+            </select>
+            <select name="select" style='border:none;width: 115px; height: 40px; font-size: 15px; font-family: "Times New Roman", Serif'>
+                <option value = "all">选择数据来源</option>
+                <option value = "ZLJOB">智联招聘</option>
+                <option value = "51JOB">前程无忧</option>
+            </select>
+            <input name="submit" type="submit"  value="爬取数据" class="spider_icon">
+            <a href="http://127.0.0.1:5555/tasks" target="_blank">爬取进度</a>
+            <input name="username" value="{{username}}" hidden="hidden">
+        </form>
+        {% csrf_token %}
+    </div>
+    <div class="loading hide">
+        <div class="gif"></div>
+    </div>
+    <div class="wrap login_wrap">
+        <div class="content">
+            <div class="search_box">
+                <div class="login_form">
+                    <div class="login_title">
+                        <h1>最近爬取信息</h1>
+                    </div>
+                    </div>
+                    <div name="display_message">
+                            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#969696">    <!--width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#969696"-->
+                                <tr>
+                                    <th bgcolor="#C0C0C0">公司名称</th>
+                                    <th bgcolor="#C0C0C0">职位名称</th>
+                                    <th bgcolor="#C0C0C0">职位薪水</th>
+                                    <th bgcolor="#C0C0C0">工作经验</th>
+                                    <th bgcolor="#C0C0C0">工作地点</th>
+                                    <th bgcolor="#C0C0C0">公司性质</th>
+                                    <th bgcolor="#C0C0C0">最低学历</th>
+                                    <th bgcolor="#C0C0C0">职位数量</th>
+                                    <th bgcolor="#C0C0C0">发布日期</th>
+                                </tr>
+                                {% for message in job_message_list %}
+                                <tr>
+                                    {% if source == 'ZLJOB' %}
+                                    <td bgcolor="#FFFFFF"><a href="http://127.0.0.1:8000\messagebyzl?id={{message.pk}}&username={{username}}">{{message.GSname}}</a></td>
+                                    {% else %}
+                                    <td bgcolor="#FFFFFF"><a href="http://127.0.0.1:8000\messageby51?id={{message.pk}}&username={{username}}">{{message.GSname}}</a></td>
+                                    {% endif %}
+                                    <td bgcolor="#FFFFFF">{{message.ZWname}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWsalary}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWexp}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWadd}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWnature}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZDedu}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWnum}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.date}}</td>
+                                </tr>
+                                {% endfor %}
+                                {% paginate %}
+                                {% csrf_token %}
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

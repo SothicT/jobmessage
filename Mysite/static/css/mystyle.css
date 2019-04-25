@@ -1,0 +1,44 @@
+#main ul {
+		list-style:none;	/*不显示列表项的项目符号*/
+	}
+	#main li {
+		padding:5px;	/*设置列表项的内边距*/
+	}
+	header {
+		background-image: url(images/bkground.jpg);	/*设置背景*/
+		background-size: cover;
+		height:80px;
+		width:1280px;
+	}
+	section {
+		margin:0 auto auto auto;		/*设置外边距*/
+		width:1280px;					/*设置页面宽度*/
+		clear:both;						/*设置两侧均不可以有浮动内容*/
+		background-color: #FFFFFF;		/*设置背景颜色*/
+		background-image: url(images/bkground.jpg);
+		background-size: cover;
+		border:1px solid #407D2A;	/*设置显示1像素的外边框*/
+		height:600px;				/*设置高度*/
+	}
+	aside {
+		width:170px;	/*设置宽度*/
+		float:left;/*设置浮动在左侧*/
+		border-right:1px solid #407D2A;	/*设置右侧显边框*/
+		padding-right:5px;
+	}
+	#left {
+		float:left;	/*设置浮动在左侧*/
+	}
+	#right {
+		float:right;	/*设置浮动在右侧*/
+	}
+	#main {
+		float:left;	/*设置浮动在左侧*/
+	}
+	th {
+	padding: 5px;
+	color : #FF7F50;
+    }
+    td{
+    padding : 5px;
+    }

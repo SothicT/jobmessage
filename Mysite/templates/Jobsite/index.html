@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+		<!--载入static-->
+		{% load staticfiles %}
+		<meta charset="utf-8">
+		<title>欢迎登录</title>
+		<link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+		<link rel="stylesheet" href="{% static "css/common.css" %}"/>
+		<link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+
+		<script type="text/javascript">
+			function check() {
+				if(login_form.username.value == ""){
+				alert("请输入用户名!");
+				login_form.username.focus();
+				return;
+				}
+				if(login_form.password.value == ""){
+				alert("请输入密码!");
+				login_form.password.focus();
+				return;
+				}
+				login_form.submit();
+			}
+			function reset(){
+				login_form.username.focus();
+				return;
+			}
+		</script>
+
+<body>
+
+		<div class="wrap login_wrap">
+			<div class="content">
+				<div class="logo"></div>
+				<div class="login_box">
+					
+					<div class="login_form">
+						<div class="login_title">
+							登录
+						</div>
+						<form action="/mainbyzl/" method="post" name="login_form">
+
+							<div class="form_text_ipt">
+								<input name="username" type="text" placeholder="账号">
+							</div>
+							<div class="ececk_warning"><span>账号不能为空</span></div>
+							<div class="form_text_ipt">
+								<input name="password" type="password" placeholder="密码">
+							</div>
+							<div class="ececk_warning"><span>密码不能为空</span></div>
+							<div class="form_check_ipt">
+								<div class="left check_left">
+									<label><input name="" type="checkbox"> 下次自动登录</label>
+								</div>
+								<div class="right check_right">
+									<a href="http://127.0.0.1:8000/modify">忘记密码</a>
+								</div>
+							</div>
+							<div class="form_btn">
+								<button type="button" onclick="check()">登录</button>
+								<!--使页面跳转不报403错误，防止CSRF验证失败-->
+								{% csrf_token %}
+							</div>
+							<div class="form_reg_btn">
+								<span>还没有帐号？</span><a href="http://localhost:8000/register">马上注册</a>
+							</div>
+						</form>
+						<div class="other_login">
+							<div class="left other_left">
+								<span>其它登录方式</span>
+							</div>
+							<div class="right other_right">
+								<a href=""><i class="fa fa-qq fa-2x"></i></a>
+								<a href=""><i class="fa fa-weixin fa-2x"></i></a>
+								<a href=""><i class="fa fa-weibo fa-2x"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="{% static "js/jquery.min.js" %} " ></script>
+		<script type="text/javascript" src="{% static "js/common.js" %}" ></script>
+		<div style="text-align:center;">
+</div>
+	</body>
+</html>

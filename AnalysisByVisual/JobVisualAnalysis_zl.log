@@ -1,0 +1,36 @@
+2018-04-16 18:27:26,540 INFO     hu         显示DataFrame相关信息：
+
+2018-04-16 18:27:26,550 INFO     hu         开始进行json数据清洗
+
+2018-04-16 18:35:23,220 INFO     hu         json数据清洗完毕  
+
+2018-04-16 18:35:23,428 INFO     hu         数据已写入Reslove.json中
+
+2018-04-16 18:41:41,762 INFO     hu         显示DataFrame相关信息：
+
+2018-04-16 18:43:13,056 INFO     hu         显示DataFrame相关信息：
+
+2018-04-17 09:31:43,155 INFO     hu         显示DataFrame相关信息：
+
+2018-04-17 09:31:43,168 INFO     hu         开始保存work_num分析结果
+
+2018-04-17 10:13:50,880 INFO     hu         显示DataFrame相关信息：
+
+2018-04-17 10:13:50,893 INFO     hu         开始保存exp_num分析结果
+
+2018-04-22 13:26:09,263 INFO     hu         显示DataFrame相关信息：
+
+2018-04-22 13:26:09,286 INFO     hu         开始保存edu_salary分析结果
+
+2018-05-06 10:08:27,085 INFO     hu         开始进行json数据清洗
+
+2018-05-06 10:08:57,146 INFO     hu         显示DataFrame相关信息：
+
+2018-05-06 10:08:57,169 INFO     hu         显示DataFrame相关信息：
+
+2018-05-06 10:09:50,024 INFO     hu         显示DataFrame相关信息：
+
+2018-05-06 10:15:48,968 INFO     hu         显示DataFrame相关信息：
+
+2018-05-06 10:16:04,083 INFO     hu         显示DataFrame相关信息：
+

@@ -1,0 +1,536 @@
+2018-06-02 14:57:40,488 INFO     hu         python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-06-02 14:57:45,689 INFO     hu         python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-06-02 14:57:46,235 INFO     hu         添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-06-02 14:57:46,978 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ753167280J00150943501.htm数据成功
+
+2018-06-02 14:57:47,201 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:47,946 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC559029625J00033930512.htm数据成功
+
+2018-06-02 14:57:48,041 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:49,060 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000134857J90001005000数据成功
+
+2018-06-02 14:57:49,693 INFO     hu         python返回URL：http://jobs.zhaopin.com/522208080250210.htm数据成功
+
+2018-06-02 14:57:49,764 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:51,038 INFO     hu         python返回URL：http://jobs.zhaopin.com/147794901250457.htm数据成功
+
+2018-06-02 14:57:51,104 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:51,810 INFO     hu         python返回URL：http://jobs.zhaopin.com/121114320250528.htm数据成功
+
+2018-06-02 14:57:51,845 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:52,661 INFO     hu         python返回URL：http://jobs.zhaopin.com/121114320250555.htm数据成功
+
+2018-06-02 14:57:52,742 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:53,512 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ148804530J00029427906.htm数据成功
+
+2018-06-02 14:57:53,559 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:53,912 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000910799J90000098000数据成功
+
+2018-06-02 14:57:54,555 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC447918086J00041634214.htm数据成功
+
+2018-06-02 14:57:54,610 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:54,897 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000134857J90001580000数据成功
+
+2018-06-02 14:57:55,242 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000116133J90003539000数据成功
+
+2018-06-02 14:57:55,676 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC160471515J00039307408.htm数据成功
+
+2018-06-02 14:57:55,752 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:56,448 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC700231080J00045422610.htm数据成功
+
+2018-06-02 14:57:56,492 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:56,993 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC495457428J00089375107.htm数据成功
+
+2018-06-02 14:57:57,046 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:57,799 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC426553823J00081956407.htm数据成功
+
+2018-06-02 14:57:57,867 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:58,410 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC309618112J00043293004.htm数据成功
+
+2018-06-02 14:57:58,449 INFO     hu         获取数据成功      
+
+2018-06-02 14:57:59,713 INFO     hu         python返回URL：http://jobs.zhaopin.com/204092515250141.htm数据成功
+
+2018-06-02 14:57:59,763 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:00,493 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ650831330J00080572406.htm数据成功
+
+2018-06-02 14:58:00,555 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:01,054 INFO     hu         python返回URL：http://jobs.zhaopin.com/229639125250120.htm数据成功
+
+2018-06-02 14:58:01,096 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:01,884 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC691760722J00120369501.htm数据成功
+
+2018-06-02 14:58:01,950 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:02,714 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC557650785J00113377407.htm数据成功
+
+2018-06-02 14:58:02,759 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:03,596 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ418935630J00034963913.htm数据成功
+
+2018-06-02 14:58:03,653 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:03,985 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000957796J90000030000数据成功
+
+2018-06-02 14:58:04,286 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000116197J90000046000数据成功
+
+2018-06-02 14:58:04,700 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000116197J90000039000数据成功
+
+2018-06-02 14:58:05,039 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000957796J90000113000数据成功
+
+2018-06-02 14:58:05,777 INFO     hu         python返回URL：http://jobs.zhaopin.com/310826980250073.htm数据成功
+
+2018-06-02 14:58:05,945 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:06,546 INFO     hu         python返回URL：http://jobs.zhaopin.com/518487033250883.htm数据成功
+
+2018-06-02 14:58:06,622 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:07,033 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ418935630J00034965413.htm数据成功
+
+2018-06-02 14:58:07,081 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:07,671 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC179969915J00032550814.htm数据成功
+
+2018-06-02 14:58:07,744 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:08,041 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000113322J90000063000数据成功
+
+2018-06-02 14:58:08,389 INFO     hu         python返回URL：https://xiaoyuan.zhaopin.com/job/CC000113322J90000025000数据成功
+
+2018-06-02 14:58:09,125 INFO     hu         python返回URL：http://jobs.zhaopin.com/204340919250724.htm数据成功
+
+2018-06-02 14:58:09,169 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:10,008 INFO     hu         python返回URL：http://jobs.zhaopin.com/548427082250037.htm数据成功
+
+2018-06-02 14:58:10,037 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:10,977 INFO     hu         python返回URL：http://jobs.zhaopin.com/693922824250513.htm数据成功
+
+2018-06-02 14:58:11,037 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:11,625 INFO     hu         python返回URL：http://jobs.zhaopin.com/518487033250795.htm数据成功
+
+2018-06-02 14:58:11,721 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:12,287 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ418935630J00034972613.htm数据成功
+
+2018-06-02 14:58:12,373 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:12,970 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ418935630J00034978213.htm数据成功
+
+2018-06-02 14:58:13,006 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:13,660 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ418935630J00034977313.htm数据成功
+
+2018-06-02 14:58:13,690 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:14,174 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ418935630J00034980313.htm数据成功
+
+2018-06-02 14:58:14,212 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:14,871 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ418935630J00034975913.htm数据成功
+
+2018-06-02 14:58:14,907 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:15,532 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC206646211J00037772714.htm数据成功
+
+2018-06-02 14:58:15,575 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:16,136 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC664988485J00170172901.htm数据成功
+
+2018-06-02 14:58:16,185 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:16,638 INFO     hu         python返回URL：http://jobs.zhaopin.com/120532528250155.htm数据成功
+
+2018-06-02 14:58:16,689 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:17,411 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ650084380J00034089814.htm数据成功
+
+2018-06-02 14:58:17,452 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:18,039 INFO     hu         python返回URL：http://jobs.zhaopin.com/443825827250522.htm数据成功
+
+2018-06-02 14:58:18,065 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:18,727 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC504527124J00157150801.htm数据成功
+
+2018-06-02 14:58:18,786 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:19,189 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC203691786J00123206303.htm数据成功
+
+2018-06-02 14:58:19,229 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:20,000 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ292499380J00038267413.htm数据成功
+
+2018-06-02 14:58:20,074 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:20,714 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ721902180J00020141403.htm数据成功
+
+2018-06-02 14:58:20,765 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:21,274 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC162645423J00043872809.htm数据成功
+
+2018-06-02 14:58:21,320 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:21,789 INFO     hu         python返回URL：http://jobs.zhaopin.com/134729222250297.htm数据成功
+
+2018-06-02 14:58:21,825 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:22,251 INFO     hu         python返回URL：http://jobs.zhaopin.com/311425914250113.htm数据成功
+
+2018-06-02 14:58:22,284 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:22,774 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ756908500J00041141113.htm数据成功
+
+2018-06-02 14:58:22,801 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:23,404 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ896002570J00042687114.htm数据成功
+
+2018-06-02 14:58:23,477 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:24,318 INFO     hu         python返回URL：http://jobs.zhaopin.com/257880533250343.htm数据成功
+
+2018-06-02 14:58:24,435 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:25,078 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ489657880J00047341913.htm数据成功
+
+2018-06-02 14:58:25,128 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:25,919 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC146609465J00042631315.htm数据成功
+
+2018-06-02 14:58:26,850 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:27,844 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC239162011J00079449902.htm数据成功
+
+2018-06-02 14:58:28,017 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:29,498 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC137755791J00078701704.htm数据成功
+
+2018-06-02 14:58:29,561 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:30,503 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ774121260J00009109610.htm数据成功
+
+2018-06-02 14:58:30,612 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:33,369 INFO     hu         python返回URL：http://jobs.zhaopin.com/629464721250146.htm数据成功
+
+2018-06-02 14:58:33,520 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:35,475 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC443446127J00045468413.htm数据成功
+
+2018-06-02 14:58:35,757 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:36,379 INFO     hu         python返回URL：http://jobs.zhaopin.com/624899520250111.htm数据成功
+
+2018-06-02 14:58:36,439 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:36,906 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ478678530J00040265214.htm数据成功
+
+2018-06-02 14:58:36,976 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:37,826 INFO     hu         python返回URL：http://jobs.zhaopin.com/401520011250732.htm数据成功
+
+2018-06-02 14:58:37,859 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:38,528 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ503218020J00039713215.htm数据成功
+
+2018-06-02 14:58:38,583 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:39,272 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC514665088J00078260305.htm数据成功
+
+2018-06-02 14:58:39,350 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:40,122 INFO     hu         python返回URL：http://jobs.zhaopin.com/632409780250394.htm数据成功
+
+2018-06-02 14:58:40,186 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:41,002 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC000644699J00024938815.htm数据成功
+
+2018-06-02 14:58:41,055 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:42,069 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC139189881J00107037105.htm数据成功
+
+2018-06-02 14:58:42,123 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:42,812 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC571840987J00096671303.htm数据成功
+
+2018-06-02 14:58:42,846 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:43,606 INFO     hu         python返回URL：http://jobs.zhaopin.com/602197236250015.htm数据成功
+
+2018-06-02 14:58:43,677 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:44,200 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC486655628J00065433503.htm数据成功
+
+2018-06-02 14:58:44,251 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:44,860 INFO     hu         python返回URL：http://jobs.zhaopin.com/346197188250000.htm数据成功
+
+2018-06-02 14:58:44,913 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:45,479 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC532006929J00122817705.htm数据成功
+
+2018-06-02 14:58:45,507 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:46,325 INFO     hu         python返回URL：http://jobs.zhaopin.com/135800162250218.htm数据成功
+
+2018-06-02 14:58:46,385 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:46,929 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC402490883J00169802901.htm数据成功
+
+2018-06-02 14:58:46,969 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:47,647 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC201679821J00085215307.htm数据成功
+
+2018-06-02 14:58:47,674 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:48,290 INFO     hu         python返回URL：http://jobs.zhaopin.com/365252288250020.htm数据成功
+
+2018-06-02 14:58:48,330 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:49,046 INFO     hu         python返回URL：http://jobs.zhaopin.com/120155269261170.htm数据成功
+
+2018-06-02 14:58:49,097 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:49,664 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC207488718J00087876508.htm数据成功
+
+2018-06-02 14:58:49,743 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:50,574 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ634723730J00031114906.htm数据成功
+
+2018-06-02 14:58:50,629 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:51,219 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC132067430J00048148514.htm数据成功
+
+2018-06-02 14:58:51,282 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:51,762 INFO     hu         python返回URL：http://jobs.zhaopin.com/343763887250007.htm数据成功
+
+2018-06-02 14:58:51,815 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:52,634 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC331657914J00055276808.htm数据成功
+
+2018-06-02 14:58:52,690 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:53,714 INFO     hu         python返回URL：http://jobs.zhaopin.com/599672686250010.htm数据成功
+
+2018-06-02 14:58:53,811 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:54,486 INFO     hu         python返回URL：http://jobs.zhaopin.com/152147126250194.htm数据成功
+
+2018-06-02 14:58:54,550 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:55,450 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC633225723J00043744114.htm数据成功
+
+2018-06-02 14:58:55,549 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:56,455 INFO     hu         python返回URL：http://jobs.zhaopin.com/132795764251045.htm数据成功
+
+2018-06-02 14:58:56,527 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:57,995 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ551556680J00070862805.htm数据成功
+
+2018-06-02 14:58:58,070 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:58,630 INFO     hu         python返回URL：http://jobs.zhaopin.com/251384633250031.htm数据成功
+
+2018-06-02 14:58:58,687 INFO     hu         获取数据成功      
+
+2018-06-02 14:58:59,362 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ727459990J00039228808.htm数据成功
+
+2018-06-02 14:58:59,421 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:00,244 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC664662120J00121938805.htm数据成功
+
+2018-06-02 14:59:00,297 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:01,710 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC664662120J00121938705.htm数据成功
+
+2018-06-02 14:59:01,765 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:02,695 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC185286228J00049044409.htm数据成功
+
+2018-06-02 14:59:02,754 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:03,292 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC565725320J00058175905.htm数据成功
+
+2018-06-02 14:59:03,318 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:04,114 INFO     hu         python返回URL：http://jobs.zhaopin.com/577197526250000.htm数据成功
+
+2018-06-02 14:59:04,180 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:04,940 INFO     hu         python返回URL：http://jobs.zhaopin.com/252465189250054.htm数据成功
+
+2018-06-02 14:59:04,979 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:05,879 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC477765630J00040736511.htm数据成功
+
+2018-06-02 14:59:05,948 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:06,745 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC343814287J00038453513.htm数据成功
+
+2018-06-02 14:59:06,813 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:07,488 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ895647870J00035172913.htm数据成功
+
+2018-06-02 14:59:07,523 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:08,226 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC516333328J00047949011.htm数据成功
+
+2018-06-02 14:59:08,275 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:08,994 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC324970984J00024993913.htm数据成功
+
+2018-06-02 14:59:09,053 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:09,646 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC630210131J00033505006.htm数据成功
+
+2018-06-02 14:59:09,717 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:10,361 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC000571497J00047686010.htm数据成功
+
+2018-06-02 14:59:10,439 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:11,184 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC308502186J00050666809.htm数据成功
+
+2018-06-02 14:59:11,247 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:11,778 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC377500514J00048554012.htm数据成功
+
+2018-06-02 14:59:11,821 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:12,477 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ662788520J00070056907.htm数据成功
+
+2018-06-02 14:59:12,520 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:13,304 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC381540622J00026853911.htm数据成功
+
+2018-06-02 14:59:13,370 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:14,312 INFO     hu         python返回URL：http://jobs.zhaopin.com/648829825250048.htm数据成功
+
+2018-06-02 14:59:14,373 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:14,841 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC443555111J00055504408.htm数据成功
+
+2018-06-02 14:59:14,870 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:15,483 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC403300628J00087032607.htm数据成功
+
+2018-06-02 14:59:15,549 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:16,168 INFO     hu         python返回URL：http://jobs.zhaopin.com/CZ761724170J00041459815.htm数据成功
+
+2018-06-02 14:59:16,211 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:16,741 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC195629312J00066606204.htm数据成功
+
+2018-06-02 14:59:16,879 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:17,704 INFO     hu         python返回URL：http://jobs.zhaopin.com/164293317250266.htm数据成功
+
+2018-06-02 14:59:17,771 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:18,358 INFO     hu         python返回URL：http://jobs.zhaopin.com/289131788250825.htm数据成功
+
+2018-06-02 14:59:18,408 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:18,915 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC365364322J00022385911.htm数据成功
+
+2018-06-02 14:59:18,962 INFO     hu         获取数据成功      
+
+2018-06-02 14:59:19,686 INFO     hu         python返回URL：http://jobs.zhaopin.com/CC244957036J00057929808.htm数据成功
+
+2018-06-02 14:59:19,727 INFO     hu         获取数据成功      
+
+2018-12-25 10:06:32,461 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 10:06:38,222 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 10:06:38,251 INFO     TanTtT     添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-25 10:23:20,550 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 10:23:31,082 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 10:23:31,116 INFO     TanTtT     添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-25 11:27:42,011 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:27:47,042 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:27:47,102 INFO     TanTtT     添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-25 11:42:30,673 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:42:34,034 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:42:34,063 INFO     TanTtT     添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-25 11:43:09,050 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:43:12,347 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:43:12,375 INFO     TanTtT     添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-25 11:46:49,574 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:47:19,412 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=0&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:49:34,317 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:49:37,691 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:49:37,717 INFO     TanTtT     添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-25 11:50:42,824 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 11:51:05,825 INFO     TanTtT     python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:50:06,848 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:50:11,086 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:54:22,307 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:55:18,800 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:55:56,902 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:56:11,686 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:56:15,943 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 13:56:15,960 INFO     Tan        添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-25 14:09:33,211 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 14:09:36,907 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-25 14:09:36,927 INFO     Tan        添加URL到：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1到URLS中
+
+2018-12-27 09:10:35,391 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=1&isfilter=0&fl=489&isadv=0&sb=1数据成功
+
+2018-12-27 09:10:46,593 INFO     Tan        python返回URL：http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%85%A8%E5%9B%BD&kw=图像处理&sm=0&p=2&isfilter=0&fl=489&isadv=0&sb=1数据成功
+

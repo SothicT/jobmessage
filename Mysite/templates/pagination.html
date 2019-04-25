@@ -1,0 +1,29 @@
+    {% if is_paginated %}
+    {% load i18n %}
+    <nav id="pc_pagination" class="text-center">
+    <li class="pagination">
+        {% if page_obj.has_previous %}
+        <li><a href="?page={{ page_obj.previous_page_number }}{{ getvars }}{{ hashtag }}&username={{username}}" aria-label="Previous"><span aria-hidden="true">‹‹</span> {% trans "previous" %}</a> </li>
+        {% else %}
+        <li class="disabled"><a href="#" aria-label="Previous"><span>‹‹{% trans "previous" %}</span></a></li>
+        {% endif %}
+        {% for page in pages %}
+            {% if page %}
+                {% ifequal page page_obj.number %}
+                    <li class="active"><a href="#">{{page}}<span class="sr-only">(current)</span></a></li>
+                    <!--<span class="current page">{{ page }}</span>  -->
+                {% else %}
+                    <li><a href="?page={{ page }}{{ getvars }}{{ hashtag }}&username={{username}}" class="page">{{ page }}</a></li>
+                {% endifequal %}
+            {% else %}
+                <li><a href="#">...</a></li>
+            {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}{{ getvars }}{{ hashtag }}&username={{username}}" aria-label="next"><span aria-hidden="true">››</span></a></li>
+        {% else %}
+            <li class="disabled"><a href="#" aria-label="next"><span aria-hidden="true">››</span></a></li>
+        {% endif %}
+    </ul>
+    </nav>
+    {% endif %}

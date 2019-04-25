@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>招聘信息分析系统51</title>
+    {% load staticfiles %}
+    {% load pagination_tags %}      <!--# 标记要分页的页面-->
+    {% autopaginate job_message_list  %} <!-- # 每页显示60条数据，不加数字默认值为20-->
+    <link rel="stylesheet" href="{% static "css/reset.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/common.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/layout.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/select.css" %}"/>
+    <SCRIPT language=JavaScript>
+        function jumpPage(targ,selObj,restore)
+        {
+          eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+            if (restore)
+                selObj.selectedIndex=0;
+         }
+    </SCRIPT>
+</head>
+<body>
+	<div name="headline" class="navBar">
+		<dl>
+			<dt>
+				<a href="#">招聘信息可视化分析系统</a>
+				<a href="http://127.0.0.1:8000\Visual?username={{username}}">可视化分析</a>
+                <a href="http://127.0.0.1:8000\mainbyzl?username={{username}}">数据来源:智联招聘</a>
+                <a href="http://127.0.0.1:8000\mainby51?username={{username}}">数据来源:前程无忧</a>
+                <a href="http://127.0.0.1:8000\spider?username={{username}}">爬取相关工作</a>
+			</dt>
+            <dd>
+                 <a href="http://127.0.0.1:8000\modify?username={{username}}"><strong>欢迎：{{username}}</strong></a>
+                <a href="http://127.0.0.1:8000">注销</a>
+                <span>
+                    <script type="text/javascript" language="javascript">
+				        var myDate = new Date();
+				        var timestr = myDate.getFullYear()+'年'+(myDate.getMonth()+1)+'月'+myDate.getDate()+'日';
+				        document.write("<font style='font-size:13px;font-family:Microsoft Yahei,宋体;color:#fff; padding-left:20px;'>"+timestr+"</font>");
+			        </script>
+                </span>
+            </dd>
+		</dl>
+	</div>
+    <div class="search" align="center" >
+        <form id="search_form_rent" name="search_form" action="/Searchin51/" method="post">
+            {% csrf_token %}
+            <input name="searchtext" type = "text" value="" placeholder = "请输入关键字"   style='border:none;width: 531px; height：40px;font-size: 24px; font-family: "Times New Roman", Serif'>
+            <select name="select" style='width: 209px; height: 40px; font-size: 24px; font-family: "Times New Roman", Serif'>
+                <option value = "all">搜索全部信息</option>
+                <option value = "ZWname">职位名称</option>
+                <option value = "ZWsalary">职位工资</option>
+                <option value = "ZWadd">工作地点</option>
+                <option value = "ZDedu">最低学历</option>
+                <option value="ZWexp">工作经验</option>
+                <option value="date">发布日期</option>
+            </select>
+            <input name="submit" type="submit"  value=" " class="search_icon">
+            <a href="http://127.0.0.1:8000/search?username={{username}}&source=51">高级搜索</a>
+            <input name="username" value="{{username}}" hidden="hidden">
+        </form>
+    </div>
+    <div class="wrap login_wrap">
+			<div class="content">
+				<div class="search_box">
+					<div class="login_form">
+						<div class="login_title">
+                            <h2>招聘信息</h2>
+						</div>
+                            <div>
+                            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#969696">    <!--width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#969696"-->
+                                <tr>
+                                    <th bgcolor="#C0C0C0">公司名称</th>
+                                    <th bgcolor="#C0C0C0">职位名称</th>
+                                    <th bgcolor="#C0C0C0">职位薪水
+                                        <!--<div>-->
+                                        <!--<a href="http://127.0.0.1:8000/Sortby51?username={{username}}&sorttype=ZWsalarySX">升序&#8593;</a>-->
+                                        <!--<a href="http://127.0.0.1:8000/Sortby51?username={{username}}&sorttype=ZWsalaryJX">降序&#8595;</a>-->
+                                        <!--</div>-->
+                                    </th>
+                                    <th bgcolor="#C0C0C0">工作经验
+                                      <div id="parent">
+                                        <select onchange="jumpPage('parent',this,0)">
+                                            <option name="default" value="#">选择工作经验</option>
+                                            <option name="all" value="http://127.0.0.1:8000/mainby51?username={{username}}">不限</option>
+                                            <option name="1" value="http://127.0.0.1:8000/ZWexpby51?username={{username}}&ZWexp=1">一年</option>
+                                            <option name="2" value="http://127.0.0.1:8000/ZWexpby51?username={{username}}&ZWexp=2">2年</option>
+                                            <option name="3-4" value="http://127.0.0.1:8000/ZWexpby51?username={{username}}&ZWexp=3-4">3-4年</option>
+                                            <option name="5-7" value="http://127.0.0.1:8000/ZWexpby51?username={{username}}&ZWexp=5-7">5-7年</option>
+                                            <option name="8-9" value="http://127.0.0.1:8000/ZWexpby51?username={{username}}&ZWexp=8-9">8-9年</option>
+                                            <option name="10" value="http://127.0.0.1:8000/ZWexpby51?username={{username}}&ZWexp=10">10年以上</option>
+                                        </select>
+                                        </div>
+                                    </th>
+                                    <th bgcolor="#C0C0C0">工作地点
+                                        <div id="parent">
+                                        <select onchange="jumpPage('parent',this,0)">
+                                            <option name="default" value="#">选择城市</option>
+                                            <option name="BJ" value="http://127.0.0.1:8000/ZWaddby51?username={{username}}&ZWadd=BJ">北京</option>
+                                            <option name="SH" value="http://127.0.0.1:8000/ZWaddby51?username={{username}}&ZWadd=SH">上海</option>
+                                            <option name="SZ" value="http://127.0.0.1:8000/ZWaddby51?username={{username}}&ZWadd=SZ">深圳</option>
+                                            <option name="GZ" value="http://127.0.0.1:8000/ZWaddby51?username={{username}}&ZWadd=GZ">广州</option>
+                                            <option name="NC" value="http://127.0.0.1:8000/ZWaddby51?username={{username}}&ZWadd=NC">南昌</option>
+                                        </select>
+                                        </div>
+                                    </th>
+                                    <th bgcolor="#C0C0C0">最低学历
+                                        <div id="parent">
+                                        <select onchange="jumpPage('parent',this,0)">
+                                            <option name="default" value="#">选择学历</option>
+                                            <option name="BX" value="http://127.0.0.1:8000/ZDeduby51?username={{username}}&ZDedu=BX">不限</option>
+                                            <option name="ZZ" value="http://127.0.0.1:8000/ZDeduby51?username={{username}&}ZDedu=ZZ">中专</option>
+                                            <option name="DZ" value="http://127.0.0.1:8000/ZDeduby51?username={{username}}&ZDedu=DZ">大专</option>
+                                            <option name="BK" value="http://127.0.0.1:8000/ZDeduby51?username={{username}}&ZDedu=BK">本科</option>
+                                            <option name="SS" value="http://127.0.0.1:8000/ZDeduby51?username={{username}}&ZDedu=SS">硕士</option>
+                                            <option name="BS" value="http://127.0.0.1:8000/ZDeduby51?username={{username}}&ZDedu=BS">博士</option>
+                                        </select>
+                                        </div>
+                                    </th>
+                                    <th bgcolor="#C0C0C0">职位数量</th>
+                                    <th bgcolor="#C0C0C0">发布日期</th>
+                                </tr>
+                                {% for message in job_message_list %}
+                                <tr>
+                                    <td bgcolor="#FFFFFF"><a href="http://127.0.0.1:8000\messageby51?id={{message.pk}}&username={{username}}">{{message.GSname}}</a></td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWname}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWsalary}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWexp}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWadd}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZDedu}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.ZWnum}}</td>
+                                    <td bgcolor="#FFFFFF">{{message.date}}</td>
+                                </tr>
+                                {% endfor %}
+                                {% paginate %}
+                                {% csrf_token %}
+                            </table>
+                        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="{% static "js/jquery.min.js" %} " ></script>
+		<script type="text/javascript" src="{% static "js/common.js" %}" ></script>
+		<div style="text-align:center;">
+</body>
+</html>

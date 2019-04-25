@@ -1,0 +1,17 @@
+#gallery { width:900px; height:700px; margin:0 auto; position:relative; font-family:verdana, arial, sans-serif; background:url(../img/message_bg.jpg) no-repeat center center; }
+#gallery #slides { position:absolute; right:10px; top:0; height:550px; width:100px; overflow:hidden; text-align:center; z-index:500; }
+#gallery #slides div { width:100px; height:550px; position:relative; padding-top:10px; }
+#gallery #slides div ul { padding:0; margin:0; list-style:none; width:92px; height:550px }
+#gallery #slides div ul li { float:left; padding:1px 0; width:100px; height:69px; }
+#gallery #slides div ul li a { display:block; width:100px; height:69px; float:left; }
+#gallery #slides div ul li a b { display:none; }
+#gallery #slides div ul li a.previous { background:url(../img/up.png) no-repeat center ;}
+#gallery #slides div ul li a.next { background:url(../img/down.png) no-repeat center ;}
+#gallery #slides div ul li a img { display:block; width:92px; height:69px; border:0; }
+#gallery #slides div ul li img.blank { margin:0 auto; padding-top:11px; }
+#gallery #slides div ul li a:focus { outline:0; }
+#gallery #fullsize { position:absolute; left:0; top:0; height:550px; width:750px; overflow:hidden; text-align:center; z-index:200; }
+#gallery #fullsize div { width:750px; height:550px; padding-top:70px; position:relative; }
+#gallery #fullsize div img { clear:both; display:block; margin:0 auto; border:0px solid #eee; width:480px; height:320px; position:relative; background:#fff; padding:10px; }
+#gallery #fullsize div h3 { padding:10px 0 0 0; margin:0; font-size:18px; }
+#gallery #fullsize div p { padding:5px 135px; margin:0; font-size:12px; line-height:18px; }
